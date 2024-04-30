@@ -25,3 +25,6 @@ dist-ssr
 
 #inveroment files
 .env
+
+# Other files
+z_trash/

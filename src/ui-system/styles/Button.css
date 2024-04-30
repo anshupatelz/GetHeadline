@@ -1,0 +1,15 @@
+.btn {
+    padding: 7px 15px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    transition: linear 0.3s;
+    transform: scale(1.02);
+}
