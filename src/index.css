@@ -1,0 +1,89 @@
+/* CSS Reset - Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* CSS Reset - End */
+
+/* Theme Variables - Start */
+:root {
+  --primary-color: rgb(16, 185, 144);
+  --secondary-color: rgb(50, 59, 58);
+  --accent-color: rgb(255, 223, 146);
+  --text-color: rgb(50, 59, 58);
+  /* --bg-color-1: rgb(250, 251, 255); */
+  --bg-color-1: rgb(244, 244, 244);
+  --bg-color-2: rgb(231, 255, 249);
+  --bg-color-3: rgb(255, 223, 146, 0.2);
+  --font-size: 1rem;
+  --border-radius: 20px;
+  --gap: 20px;
+  --container-width: 1200px;
+  --padding: 10px;
+  --yellow-light: #FFF9E9;
+  --green-light: #CFF1E9;
+  --red-light: #FDE0DE;
+  --yellow: #FFDF92;
+  --green: #10B990;
+  --red: #F7645A;
+}
+
+/* Theme Variables - End */
+
+/* Global Styles - Start */
+body {
+  font-size: var(--font-size);
+  color: var(--text-color);
+  background-color: var(--bg-color-1);
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: calc(var(--font-size)*3);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: calc(var(--font-size)*2.5);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: calc(var(--font-size)*2);
+  }
+}
+
+/* Global Styles - End */

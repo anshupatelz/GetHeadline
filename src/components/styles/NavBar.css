@@ -1,0 +1,25 @@
+.navbar {
+    border: 1.5px solid var(--secondary-color);
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    /* background-color: var(--bg-color-2); */
+    background-color: var(--bg-color-1);
+    position: fixed;
+    max-width: var(--container-width);
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: calc(var(--font-size)*1.5);
+    font-weight: 700;
+    color: var(--secondary-color);
+}

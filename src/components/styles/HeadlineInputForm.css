@@ -1,0 +1,67 @@
+.headline-input-box {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-color-1);
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid var(--primary-color);
+}
+
+.headline-input-box form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headline-input-box input {
+    background-color: var(--bg-color-1);
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: none;
+    margin-left: 20px;
+    font-size: calc(var(--font-size)*1.3);
+    font-weight: 400;
+}
+
+.headline-input-box button {
+    font-size: calc(var(--font-size)*1.2);
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .headline-input-box {
+        margin-top: 50px;
+        padding: 0;
+        border: none;
+    }
+
+    .headline-input-box form {
+        flex-direction: column;
+        gap: calc(var(--gap)/2);
+    }
+
+    .headline-input-box input {
+        margin-left: 0;
+        padding: 5px;
+        border-radius: 50px;
+        font-size: calc(var(--font-size)*1.2);
+        border: 2px solid var(--primary-color);
+    }
+
+    .headline-input-box button {
+        font-size: calc(var(--font-size)*1);
+        font-weight: 500;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .headline-input-box input {
+        font-size: calc(var(--font-size)*1.1);
+    }
+}

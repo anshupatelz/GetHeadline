@@ -1,0 +1,9 @@
+.Footer {
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--bg-color-1);
+    padding: 50px 10px 10px 10px;
+    border-radius: 50px 50px 0 0;
+    margin-top: 50px;
+}
