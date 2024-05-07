@@ -9,7 +9,7 @@ function NavBar() {
                 <p><Link to={'/'} id='logo'>GetHeadline</Link></p>
             </div>
             <div>
-                <Button href='/pro' label='Upgrade to PRO' />
+                <Button href='/pro' label='Get PRO' />
             </div>
         </nav>
     );

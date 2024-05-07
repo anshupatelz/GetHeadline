@@ -7,30 +7,15 @@ import Error404Page from './pages/Error404Page.jsx';
 
 function App() {
     let [analysisData, setAnalysisData] = useState({
-        "headline": "This is demo headline",
-        "score": 21.961111111111112,
-        "tokens": [
-            "This",
-            "is",
-            "demo",
-            "headline"
-        ],
+        "headline": "",
+        "score": 0,
+        "tokens": [""],
         "structural_analysis": {
-            "headline_type": [
-                "General"
-            ],
-            "character_count": 21,
-            "word_count": 4,
-            "beginning_words": [
-                "This",
-                "is",
-                "demo"
-            ],
-            "ending_words": [
-                "is",
-                "demo",
-                "headline"
-            ]
+            "headline_type": [],
+            "character_count": 0,
+            "word_count": 0,
+            "beginning_words": [],
+            "ending_words": []
         },
         "semantic_analysis": {
             "word_balance": {
@@ -46,8 +31,8 @@ function App() {
             "negative_words": []
         },
         "readability_analysis": {
-            "flesch_kincaid_grade": "3.67",
-            "flesch_reading_ease": "75.875"
+            "flesch_kincaid_grade": "",
+            "flesch_reading_ease": ""
         }
     });
 

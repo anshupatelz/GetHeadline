@@ -17,6 +17,7 @@
 }
 
 .headline-input-box input {
+    background-color: var(--bg-color-1);
     flex: 1;
     border: none;
     outline: none;

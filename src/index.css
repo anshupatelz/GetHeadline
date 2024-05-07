@@ -28,7 +28,8 @@ button {
   --secondary-color: rgb(50, 59, 58);
   --accent-color: rgb(255, 223, 146);
   --text-color: rgb(50, 59, 58);
-  --bg-color-1: rgb(250, 251, 255);
+  /* --bg-color-1: rgb(250, 251, 255); */
+  --bg-color-1: rgb(244, 244, 244);
   --bg-color-2: rgb(231, 255, 249);
   --bg-color-3: rgb(255, 223, 146, 0.2);
   --font-size: 1rem;
@@ -36,6 +37,12 @@ button {
   --gap: 20px;
   --container-width: 1200px;
   --padding: 10px;
+  --yellow-light: #FFF9E9;
+  --green-light: #CFF1E9;
+  --red-light: #FDE0DE;
+  --yellow: #FFDF92;
+  --green: #10B990;
+  --red: #F7645A;
 }
 
 /* Theme Variables - End */

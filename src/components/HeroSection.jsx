@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import './styles/HeroSection.css';
-import HeroDemo from '../assets/hero-demo.png';
+import GetHeadlineDemo from '../assets/GetHeadline-Demo.png';
 import HeadlineInputForm from './HeadlineInputForm';
 
 function HeroSection() {
@@ -19,7 +19,7 @@ function HeroSection() {
                 />
             </div>
             <div className='hero-demo'>
-                <img src={HeroDemo} alt="" />
+                <img src={GetHeadlineDemo} alt="" />
             </div>
         </div>
     );

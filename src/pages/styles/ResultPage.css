@@ -2,16 +2,19 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
+    /* border: 5px solid green; */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--padding);
 }
 
 .page-content {
+    padding-top: 100px;
     flex: 1;
 }
 
+
+/* ---------- Score Section - START ---------- */
 .score-section {
     max-width: 1100px;
     background-color: rgb(255, 255, 255);
@@ -64,3 +67,279 @@
 #google-priview #title {
     font-size: calc(var(--font-size)*1.5);
 }
+
+@media screen and (max-width: 768px) {
+    .score-section {
+        flex-direction: column;
+    }
+}
+
+/* @media screen and (max-width: 520px) {
+    .score-section {
+        flex-direction: column;
+    }
+} */
+
+/* ---------- Score Section - END ---------- */
+
+/* ---------- Analysis Section - START ---------- */
+
+.analysis-section {
+    max-width: 1100px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.word-count,
+.character-count {
+    grid-column: span 6;
+    padding: 0 20px 20px;
+    /* background-color: rgba(16, 185, 144, 0.3); */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid var(--primary-color); */
+}
+
+.range {
+    margin-top: 20px;
+    background: linear-gradient(to right, var(--red) 0%, var(--yellow) 25%, var(--green) 40%, var(--green) 60%, var(--yellow) 75%, var(--red) 100%);
+    border-radius: 15px;
+    height: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.range #mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.range #mask #pointer {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-top: 20px solid;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-left: -12px;
+    top: -25px;
+}
+
+
+.reading-grade-level,
+.sentiment,
+.headline-type {
+    grid-column: span 4;
+    padding: 0 20px 20px;
+    /* background-color: rgba(16, 185, 144, 0.3); */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid var(--primary-color); */
+}
+
+.analysis-section .heading-box h3 {
+    display: inline;
+    color: #fff;
+    font-size: calc(var(--font-size)*1.2);
+    font-weight: 500;
+    text-align: start;
+    background-color: var(--primary-color);
+    border-radius: 15px 0 15px 0;
+    padding: 5px 20px;
+    line-height: 1.8;
+    margin-left: -20px;
+}
+
+.analysis-section .number {
+    font-size: calc(var(--font-size)*3);
+    font-weight: 700;
+}
+
+.grade-chart-section {
+    position: relative;
+    width: 150px;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%/100% 100% 0 0;
+    overflow: hidden;
+}
+
+.grade-chart {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+}
+
+.grade-chart::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    background: white;
+    border-radius: inherit;
+}
+
+.grade-chart-section .value {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: calc(var(--font-size)*3);
+    font-weight: 700;
+    color: var(--text-color);
+    z-index: 5;
+}
+
+.sentiment .value,
+.headline-type .value {
+    font-size: calc(var(--font-size)*1.6);
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .word-count,
+    .character-count {
+        grid-column: span 12;
+    }
+
+    .reading-grade-level,
+    .sentiment,
+    .headline-type {
+        grid-column: span 12;
+    }
+}
+
+/* ---------- Analysis Section - END ---------- */
+
+/* ---------- Word Balance - START ---------- */
+.word-balance-section {
+    /* border: 1px solid red; */
+    max-width: 1100px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.all-words {
+    grid-column: span 12;
+    background-color: rgba(16, 185, 144, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.all-words .word {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: var(--primary-color);
+    font-size: calc(var(--font-size)*1.4);
+    color: #fff;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.emotional-words,
+.power-words,
+.common-words,
+.uncommon-words {
+    grid-column: span 6;
+    padding: 0 20px 20px;
+    background-color: rgba(16, 185, 144, 0.3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid var(--primary-color); */
+}
+
+.word-balance-section .heading-box h3 {
+    display: inline;
+    color: #fff;
+    font-size: calc(var(--font-size)*1.2);
+    font-weight: 500;
+    text-align: start;
+    background-color: var(--primary-color);
+    border-radius: 15px 0 15px 0;
+    padding: 5px 20px;
+    line-height: 1.8;
+    margin-left: -20px;
+}
+
+.word-balance-section .meter-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.meter {
+    /* background-color: var(--primary-color); */
+    background: #fff;
+    border-radius: 15px;
+    height: 10px;
+    flex: 1;
+}
+
+.meter .pointer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    /* background-color: rgb(85, 23, 11); */
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    margin-left: -12.5px;
+    top: -7.5px;
+    left: 0;
+    /* transition: left 0.5s; */
+}
+
+.emotional-words .word,
+.power-words .word,
+.common-words .word,
+.uncommon-words .word {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #fff;
+    border: 1.5px solid;
+    font-size: calc(var(--font-size)*1.1);
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .emotional-words,
+    .power-words,
+    .common-words,
+    .uncommon-words {
+        grid-column: span 12;
+    }
+}
+
+/* ---------- Word Balance - END ---------- */

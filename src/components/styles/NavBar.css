@@ -1,12 +1,13 @@
 .navbar {
-    border: 1.5px solid var(--primary-color);
+    border: 1.5px solid var(--secondary-color);
     grid-column: span 12;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--padding);
     border-radius: var(--border-radius);
-    background-color: var(--bg-color-2);
+    /* background-color: var(--bg-color-2); */
+    background-color: var(--bg-color-1);
     position: fixed;
     max-width: var(--container-width);
     top: 10px;
